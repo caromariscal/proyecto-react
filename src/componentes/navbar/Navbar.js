@@ -8,7 +8,6 @@ export const Navbar = () => {
 	return (
 		<header className="header">
 			<div className="header_container">
-				{/* <h1 className="header_logo">Equipar2</h1> */}
 				<img src={logo} alt="logo" className="header_logo"/>
 
 				<nav className="navbar">
