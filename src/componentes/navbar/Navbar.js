@@ -12,9 +12,9 @@ export const Navbar = () => {
 
 				<nav className="navbar">
 					<CartWidget />
-					<a href="#" className="navbar_link">Enlace 1</a>
-					<a href="#" className="navbar_link">Enlace 2</a>
-					<a href="#" className="navbar_link">Enlace 3</a>
+					<a href="#" className="navbar_link">Equipos LATAM</a>
+					<a href="#" className="navbar_link">Equipos NA</a>
+					<a href="#" className="navbar_link">Equipos EMEA</a>
 				</nav>
 			</div>
 		</header>
