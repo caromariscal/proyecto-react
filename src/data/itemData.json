@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "name": "remera Krü",
+        "description": "Remera de KRÜ Esports 2023",
+        "price": 15000,
+        "img": "https://via.placeholder.com/150",
+        "category": "latam",
+        "stock": 50
+    },
+    {
+        "id": 2,
+        "name": "remera 2",
+        "description": "Lorem impsum producto 2",
+        "price": 1500,
+        "img": "https://via.placeholder.com/150",
+        "category": "latam",
+        "stock": 50
+    },
+    {
+        "id": 3,
+        "name": "remera 3",
+        "description": "Lorem impsum producto 3",
+        "price": 1500,
+        "img": "https://via.placeholder.com/150",
+        "category": "na",
+        "stock": 50
+    },
+    {
+        "id": 4,
+        "name": "remera 4",
+        "description": "Lorem impsum producto 4",
+        "price": 1500,
+        "img": "https://via.placeholder.com/150",
+        "category": "na",
+        "stock": 50
+    },
+    {
+        "id": 5,
+        "name": "remera 5",
+        "description": "Lorem impsum producto 5",
+        "price": 1500,
+        "img": "https://via.placeholder.com/150",
+        "category": "emea",
+        "stock": 50
+    },
+    {
+        "id": 6,
+        "name": "remera 6",
+        "description": "Lorem impsum producto 6",
+        "price": 1500,
+        "img": "https://via.placeholder.com/150",
+        "category": "emea",
+        "stock": 50
+    }
+]

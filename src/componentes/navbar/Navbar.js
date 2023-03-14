@@ -1,6 +1,7 @@
 import './Navbar.scss'
 import logo from './logo.png'
 import { CartWidget } from './CartWidget/CartWidget'
+import { Link } from 'react-router-dom'
 
 
 export const Navbar = () => {
@@ -12,9 +13,10 @@ export const Navbar = () => {
 
 				<nav className="navbar">
 					<CartWidget />
-					<a href="#" className="navbar_link">Equipos LATAM</a>
-					<a href="#" className="navbar_link">Equipos NA</a>
-					<a href="#" className="navbar_link">Equipos EMEA</a>
+					<Link to="/" className="navbar_link">Inicio</Link>
+                    <Link to="/productos/latam" className="navbar_link">Equipos LATAM</Link>
+                    <Link to="/productos/na" className="navbar_link">Equipos NA</Link>
+                    <Link to="/productos/emea" className="navbar_link">Equipos EMEA</Link>
 				</nav>
 			</div>
 		</header>
