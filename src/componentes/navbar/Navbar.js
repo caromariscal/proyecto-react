@@ -1,24 +1,35 @@
 import './Navbar.scss'
 import logo from './logo.png'
-import { CartWidget } from './CartWidget/CartWidget'
 import { Link } from 'react-router-dom'
+import CartWidget from '../CartWidget/CartWidget'
+import { useContext } from 'react'
+import { LoginContext } from '../../context/LoginContext'
 
+export const Navbar = ({black}) => {
+    const { user, logout } = useContext(LoginContext)
 
-export const Navbar = () => {
+    return (
+        <header className="header" style={{backgroundColor: black ? '#000000' : '#600027c5'}}>
+            <div className="header__container">
+                <Link to="/">
+                    <img src={logo} alt="logo" className='header__logo'/>
+                </Link>
 
-	return (
-		<header className="header">
-			<div className="header_container">
-				<img src={logo} alt="logo" className="header_logo"/>
-
-				<nav className="navbar">
-					<CartWidget />
-					<Link to="/" className="navbar_link">Inicio</Link>
-                    <Link to="/productos/latam" className="navbar_link">Equipos LATAM</Link>
-                    <Link to="/productos/na" className="navbar_link">Equipos NA</Link>
-                    <Link to="/productos/emea" className="navbar_link">Equipos EMEA</Link>
-				</nav>
-			</div>
-		</header>
-	)
+                <nav className="navbar">
+                    <Link to="/" className="navbar__link">Inicio</Link>
+                    <Link to="/productos/perfumeria" className="navbar__link">Perfumeria</Link>
+                    <Link to="/productos/panaderia" className="navbar__link">Panaderia</Link>
+                    <Link to="/productos/verduleria" className="navbar__link">Verduleria</Link>
+                    <Link to="/productos/carniceria" className="navbar__link">Carniceria</Link>
+                    <Link to="/productos/limpieza" className="navbar__link">Limpieza</Link>
+                </nav>
+    
+                <CartWidget />
+            </div>
+            <div className='login-state container'>
+                <h6>Bienvenido {user.email}</h6>
+                <button className='btn btn-danger' onClick={logout}>Logout</button>
+            </div>
+        </header>
+    )
 }
