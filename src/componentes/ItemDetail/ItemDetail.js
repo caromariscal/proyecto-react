@@ -1,8 +1,8 @@
 import { useContext, useMemo, useState } from "react"
 import { Link, useNavigate } from "react-router-dom"
 import { CartContext } from "../../context/CartContext"
-import ItemCount from "../ItemCount/ItemCount"
-import LowStockMsg from "./LowStockMsg"
+import { ItemCount } from "../ItemCount/ItemCount"
+import { LowStockMsg } from "./LowStockMsg"
 
 
 export const ItemDetail = ({item}) => {
