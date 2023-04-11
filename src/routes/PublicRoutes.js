@@ -1,16 +1,23 @@
-import { LoginScreen } from "../componentes/LoginScreen/LoginScreen";
+import { ItemListContainer } from "../componentes/ItemListContainer/ItemListContainer";
+import { Navbar } from "../componentes/Navbar/Navbar";
+import { ItemDetailContainer } from "../componentes/ItemDetailContainer/ItemDetailContainer";
+import { Cart } from "../componentes/Cart/Cart";
 import { Routes, Route, Navigate } from 'react-router-dom'
-import { RegisterScreen } from "../componentes/RegisterScreen/RegisterScreen";
+import { Checkout } from "../componentes/Checkout/Checkout";
 
 export const PublicRoutes = () => {
 
     return (
         <>
+            <Navbar />
             <Routes> 
                 {/* RUTAS PUBLICAS */}
-                <Route path="/login" element={ <LoginScreen /> }/>
-                <Route path="/register" element={ <RegisterScreen /> }/>
-                <Route path="*" element={ <Navigate to="/login" /> }/>
+                <Route path="/" element={ <ItemListContainer /> }/>
+                <Route path="/productos/:categoryId" element={ <ItemListContainer /> }/>
+                <Route path="/detail/:itemId" element={ <ItemDetailContainer /> }/>
+                <Route path="/cart" element={ <Cart /> } />
+                <Route path="/checkout" element={ <Checkout /> } />
+                <Route path="*" element={ <Navigate to="/" /> }/>
             </Routes>
         </>
     )

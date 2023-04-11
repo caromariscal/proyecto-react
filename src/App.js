@@ -8,10 +8,10 @@ function App() {
 
   return (
     <LoginProvider>
-    <CartProvider>
-      <AppRouter />
-    </CartProvider>
-  </LoginProvider>
+      <CartProvider>
+        <AppRouter />
+      </CartProvider>
+    </LoginProvider>
   );
 }
 
