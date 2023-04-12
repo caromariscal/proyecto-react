@@ -22,7 +22,7 @@
         "name": "Remera OXEN",
         "description": "Remera Oxen valorant 2023",
         "price": 15000,
-        "img": "../public/img/latam/remera-oxen.wepb",
+        "img": "../public/img/latam/remera-oxen.webp",
         "category": "latam",
         "stock": 50
     },
