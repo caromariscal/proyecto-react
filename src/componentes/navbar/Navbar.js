@@ -2,14 +2,12 @@ import './Navbar.scss'
 import logo from './logo.png'
 import { Link } from 'react-router-dom'
 import { CartWidget } from '../CartWidget/CartWidget'
-import React, { useContext } from 'react'
-import { LoginContext } from '../../context/LoginContext'
 
-export const Navbar = ({black}) => {
-    const { user, logout } = useContext(LoginContext)
+
+export const Navbar = () => {
 
     return (
-        <header className="header" style={{backgroundColor: black ? '#000000' : '#600027c5'}}>
+        <header className="header">
             <div className="header_container">
                 <Link to="/">
                     <img src={logo} alt="logo" className='header_logo'/>
@@ -23,10 +21,6 @@ export const Navbar = ({black}) => {
                 </nav>
     
                 <CartWidget />
-            </div>
-            <div className='login-state container'>
-                <h6>Bienvenido {user.email}</h6>
-                <button className='btn btn-danger' onClick={logout}>Logout</button>
             </div>
         </header>
     )

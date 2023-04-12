@@ -11,7 +11,7 @@ export const Cart = () => {
     if (cart.length === 0) {
         return (
             <div className="container my-5">
-                <h2>No tienes productos agregados</h2>
+                <h2>No hay productos en tu carrito.</h2>
                 <hr/>
                 <Link to="/" className="btn btn-primary">Ir a comprar</Link>
             </div>
@@ -20,7 +20,7 @@ export const Cart = () => {
 
     return (
         <div className="container my-5">
-            <h2>Tu compra</h2>
+            <h2>Tu carrito</h2>
             <hr/>
 
             {
@@ -28,7 +28,7 @@ export const Cart = () => {
                     <div key={prod.id}>
                         <h4>{prod.name}</h4>
                         <img src={prod.img} alt={prod.name}/>
-                        <small>Precio unitario: ${prod.price} </small>
+                        <small>Precio por unidad: ${prod.price} </small>
                         <small>Cantidad: {prod.cantidad}</small>
                         <p>Precio Total: ${prod.price * prod.cantidad}</p>
                         <button 
@@ -43,7 +43,7 @@ export const Cart = () => {
             }
 
             <h3>TOTAL: ${totalCompra().toFixed(2)}</h3>
-            <button onClick={vaciarCarrito} className="btn btn-danger">Vaciar carrito</button>
+            <button onClick={vaciarCarrito} className="btn btn-outline-secondary">Vaciar carrito</button>
             <Link className="btn btn-success" to="/checkout">Terminar mi compra</Link>
         </div>
     )

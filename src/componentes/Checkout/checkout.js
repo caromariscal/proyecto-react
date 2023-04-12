@@ -74,7 +74,7 @@ export const Checkout = () => {
                 <h2>Tu orden se registró con éxito!</h2>
                 <hr/>
                 <p>Guarda tu número de orden: {orderId}</p>
-                <Link className="btn btn-primary my-3" to="/">Volver al inicio</Link>
+                <Link className="btn btn-outline-primary my-3" to="/">Volver al inicio</Link>
             </div>
         )
     }
@@ -85,7 +85,7 @@ export const Checkout = () => {
 
     return (
         <div className="container my-5">
-            <h2>Checkout</h2>
+            <h2>Finalización de tu compra</h2>
             <hr/>
 
             <Formik
@@ -113,7 +113,7 @@ export const Checkout = () => {
                             onChange={handleChange}
                             value={values.direccion}
                             type={'text'}
-                            placeholder='Direccion'
+                            placeholder='Dirección'
                             className="form-control my-2"
                             name="direccion"
                         />
@@ -130,7 +130,7 @@ export const Checkout = () => {
                         {errors.email && <p className="alert alert-danger">{errors.email}</p>}
 
 
-                        <button className="btn btn-primary" type="submit" disabled={isSubmitting}>Enviar</button>
+                        <button className="btn btn-outline-success" type="submit" disabled={isSubmitting}>Enviar</button>
                     </form>
                 )}
             </Formik>

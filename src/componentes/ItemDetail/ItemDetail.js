@@ -38,7 +38,7 @@ export const ItemDetail = ({item}) => {
 
             {
                 isInCart(item.id)
-                    ?   <Link to="/cart" className="btn btn-success my-2">Terminar mi compra</Link>
+                    ?   <Link to="/cart" className="btn btn-outline-success my-2">Terminar mi compra</Link>
                     :   <ItemCount 
                             max={item.stock}
                             cantidad={cantidad}
@@ -48,7 +48,7 @@ export const ItemDetail = ({item}) => {
             }
 
             <br/>
-            <button onClick={handleVolver} className="btn btn-primary">Volver</button>
+            <button onClick={handleVolver} className="btn btn-outline-info">Volver</button>
         </div>
     )
 }

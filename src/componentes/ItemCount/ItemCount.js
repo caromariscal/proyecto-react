@@ -12,8 +12,7 @@ export const ItemCount = ( {max, cantidad, setCantidad, handleAgregar} ) => {
         <div className="my-3">
             <button 
                 onClick={handleRestar} 
-                className={`btn boton ${cantidad === 1 ? "btn-outline-danger" : "btn-outline-primary"}`}
-                // className={`btn btn-outline-primary ${cantidad === 1 ? 'boton-deshabilitado' : ''}`}
+                className={`btn boton ${cantidad === 1 ? "btn-outline-danger" : "btn-outline-danger"}`}
                 disabled={cantidad === 1}
             >
                 -
@@ -23,14 +22,14 @@ export const ItemCount = ( {max, cantidad, setCantidad, handleAgregar} ) => {
 
             <button 
                 onClick={handleSumar} 
-                className={cantidad === max ? "btn btn-danger" : "btn btn-primary"}
+                className={cantidad === max ? "btn btn-outline-danger" : "btn btn-outline-warning"}
                 disabled={cantidad === max}
             >
                 +
             </button>
 
             <br/>
-            <button onClick={handleAgregar} className="btn btn-success my-2">Agregar al carrito</button>
+            <button onClick={handleAgregar} className="btn btn-outline-success my-2">Agregar al carrito</button>
         </div>
     )
 }
