@@ -1,56 +1,83 @@
 [
     {
         "id": 1,
-        "name": "remera Krü",
-        "description": "Remera de KRÜ Esports 2023",
+        "name": "Remera KRÜ",
+        "description": "Remera KRÜ valorant 2023",
         "price": 15000,
-        "img": "https://via.placeholder.com/150",
+        "img": "../public/img/latam/remera-kru.webp",
         "category": "latam",
         "stock": 50
     },
     {
         "id": 2,
-        "name": "remera 2",
-        "description": "Lorem impsum producto 2",
-        "price": 1500,
-        "img": "https://via.placeholder.com/150",
+        "name": "Remera LEVIATAN",
+        "description": "Remera Leviatan valorant 2023",
+        "price": 15000,
+        "img": "../public/img/latam/remera-leviatan.jpeg",
         "category": "latam",
         "stock": 50
     },
     {
         "id": 3,
-        "name": "remera 3",
-        "description": "Lorem impsum producto 3",
-        "price": 1500,
-        "img": "https://via.placeholder.com/150",
-        "category": "na",
+        "name": "Remera OXEN",
+        "description": "Remera Oxen valorant 2023",
+        "price": 15000,
+        "img": "../public/img/latam/remera-oxen.wepb",
+        "category": "latam",
         "stock": 50
     },
     {
         "id": 4,
-        "name": "remera 4",
-        "description": "Lorem impsum producto 4",
-        "price": 1500,
-        "img": "https://via.placeholder.com/150",
-        "category": "na",
+        "name": "Remera FNATIC",
+        "description": "Remera FNATIC valorant 2023",
+        "price": 15000,
+        "img": "../public/img/emea/remera-fnatic.webp",
+        "category": "emea",
         "stock": 50
     },
     {
         "id": 5,
-        "name": "remera 5",
-        "description": "Lorem impsum producto 5",
-        "price": 1500,
-        "img": "https://via.placeholder.com/150",
+        "name": "Remera GIANTS",
+        "description": "Remera Giants valorant 2023",
+        "price": 15000,
+        "img": "../public/img/emea/remera-giants.webp",
         "category": "emea",
         "stock": 50
     },
     {
         "id": 6,
-        "name": "remera 6",
-        "description": "Lorem impsum producto 6",
-        "price": 1500,
-        "img": "https://via.placeholder.com/150",
+        "name": "Remera HERETICS",
+        "description": "Remera heretics valorant 2023",
+        "price": 15000,
+        "img": "../public/img/emea/remera-heretics.jpg",
         "category": "emea",
+        "stock": 50
+    },
+    {
+        "id": 7,
+        "name": "Remera 100THIEVES",
+        "description": "Remera 100Thieves valorant 2023",
+        "price": 15000,
+        "img": "../public/img/na/remera-100t.jpeg",
+        "category": "na",
+        "stock": 50
+    },
+    {
+        "id": 8,
+        "name": "Remera CLOUD9",
+        "description": "Remera Cloud9 valorant 2023",
+        "price": 15000,
+        "img": "../public/img/na/remera-cloud9.webp",
+        "category": "na",
+        "stock": 50
+    },
+    {
+        "id": 9,
+        "name": "Remera NRG",
+        "description": "Remera NRG valorant 2023",
+        "price": 15000,
+        "img": "../public/img/na/remera-nrg.png",
+        "category": "na",
         "stock": 50
     }
 ]
