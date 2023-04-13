@@ -1,8 +1,8 @@
-import MOCK_DATA from '../data/MOCK_DATA.json' assert { type: 'json' }
+import itemData from '../data/itemData.json' assert { type: 'json' }
 import { db } from './config.js'
 import { addDoc, collection } from 'firebase/firestore'
 
-const data = MOCK_DATA.map((item) => {
+const data = itemData.map((item) => {
     delete item.id
     return item
 })

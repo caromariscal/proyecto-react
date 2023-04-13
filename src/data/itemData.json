@@ -4,7 +4,7 @@
         "name": "Remera KRÜ",
         "description": "Remera KRÜ valorant 2023",
         "price": 15000,
-        "img": "../public/img/latam/remera-kru.webp",
+        "img": "./img/latam/remera-kru.webp",
         "category": "latam",
         "stock": 50
     },
@@ -13,7 +13,7 @@
         "name": "Remera LEVIATAN",
         "description": "Remera Leviatan valorant 2023",
         "price": 15000,
-        "img": "../public/img/latam/remera-leviatan.jpeg",
+        "img": "./img/latam/remera-leviatan.jpeg",
         "category": "latam",
         "stock": 50
     },
@@ -22,7 +22,7 @@
         "name": "Remera OXEN",
         "description": "Remera Oxen valorant 2023",
         "price": 15000,
-        "img": "../public/img/latam/remera-oxen.webp",
+        "img": "./img/latam/remera-oxen.webp",
         "category": "latam",
         "stock": 50
     },
@@ -31,7 +31,7 @@
         "name": "Remera FNATIC",
         "description": "Remera FNATIC valorant 2023",
         "price": 15000,
-        "img": "../public/img/emea/remera-fnatic.webp",
+        "img": "./img/emea/remera-fnatic.webp",
         "category": "emea",
         "stock": 50
     },
@@ -40,7 +40,7 @@
         "name": "Remera GIANTS",
         "description": "Remera Giants valorant 2023",
         "price": 15000,
-        "img": "../public/img/emea/remera-giants.webp",
+        "img": "./img/emea/remera-giants.webp",
         "category": "emea",
         "stock": 50
     },
@@ -49,7 +49,7 @@
         "name": "Remera HERETICS",
         "description": "Remera heretics valorant 2023",
         "price": 15000,
-        "img": "../public/img/emea/remera-heretics.jpg",
+        "img": "./img/emea/remera-heretics.jpg",
         "category": "emea",
         "stock": 50
     },
@@ -58,7 +58,7 @@
         "name": "Remera 100THIEVES",
         "description": "Remera 100Thieves valorant 2023",
         "price": 15000,
-        "img": "../public/img/na/remera-100t.jpeg",
+        "img": "./img/na/remera-100t.jpeg",
         "category": "na",
         "stock": 50
     },
@@ -67,7 +67,7 @@
         "name": "Remera CLOUD9",
         "description": "Remera Cloud9 valorant 2023",
         "price": 15000,
-        "img": "../public/img/na/remera-cloud9.webp",
+        "img": "./img/na/remera-cloud9.webp",
         "category": "na",
         "stock": 50
     },
@@ -76,7 +76,7 @@
         "name": "Remera NRG",
         "description": "Remera NRG valorant 2023",
         "price": 15000,
-        "img": "../public/img/na/remera-nrg.png",
+        "img": "./img/na/remera-nrg.png",
         "category": "na",
         "stock": 50
     }
