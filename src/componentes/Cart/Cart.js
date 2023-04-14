@@ -1,3 +1,4 @@
+import './Cart.scss'
 import { useContext } from "react"
 import { CartContext } from "../../context/CartContext"
 import { BsFillTrashFill } from 'react-icons/bs'
@@ -27,9 +28,9 @@ export const Cart = () => {
                 cart.map((prod) => (
                     <div key={prod.id}>
                         <h4>{prod.name}</h4>
-                        <img src={prod.img} alt={prod.name}/>
-                        <small>Precio por unidad: ${prod.price} </small>
-                        <small>Cantidad: {prod.cantidad}</small>
+                        <img className='imagen' src={prod.img} alt={prod.name}/>
+                        <p><small>Precio por unidad: ${prod.price} </small> <br/>
+                        <small>Cantidad: {prod.cantidad}</small></p>
                         <p>Precio Total: ${prod.price * prod.cantidad}</p>
                         <button 
                             onClick={() => eliminarDelCarrito(prod.id) } 
