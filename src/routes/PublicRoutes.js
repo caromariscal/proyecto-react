@@ -3,7 +3,7 @@ import { Navbar } from "../componentes/navbar/Navbar";
 import { ItemDetailContainer } from "../componentes/ItemDetailContainer/ItemDetailContainer";
 import { Cart } from "../componentes/Cart/Cart";
 import { Routes, Route, Navigate } from 'react-router-dom'
-import { Checkout } from "../componentes/Checkout/Checkout";
+import { Checkout } from "../componentes/Checkout/checkout";
 
 export const PublicRoutes = () => {
 
